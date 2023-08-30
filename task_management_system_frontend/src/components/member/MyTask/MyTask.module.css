@@ -1,0 +1,380 @@
+/* Dashboard.css */
+
+/* ... Existing styles ... */
+
+/* Adding fade-in animation for the heading */
+
+
+
+.dashboard_heading {
+    font-size: 30px;
+    opacity: 0;
+    transform: scale(0.8) rotate(-20deg);
+    animation: headingAnimation 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes headingAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotate(-20deg);
+        color: #08b4f8;
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1) rotate(20deg);
+        color: #007bff;
+    }
+    80% {
+        transform: scale(0.95) rotate(-10deg);
+        color: #f8c008;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.9) rotate(0);
+        color: red;
+    }
+}
+
+/* Styling for individual tab links */
+.custom-tabs .nav_link {
+    border: none;
+    border-radius: 5px;
+    color: #555;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.custom-tabs .nav-link.active,
+.custom-tabs .nav-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+    animation: tabHover 0.3s ease-in-out forwards;
+}
+
+@keyframes tabHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+/* *{
+    box-sizing: border-box;
+} */
+#search{
+    outline: none;
+    border: none;
+    display: inline-block;
+    
+}
+#burgundy{
+    color: rgb(153, 40, 59);
+}
+#orange,select,.btn{
+    color: orange;
+}
+.fa-search{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 3px;
+    padding-right: 20px;
+}
+.search-nav-item{
+    height: 40px;
+}
+
+.fa-user-o,.fa-shopping-cart{
+    font-size: 20px;
+    padding: 4px;
+}
+.form_group{
+    margin-bottom: 5px;
+}
+.form_group:last-child{
+    margin-bottom: 0;
+}
+
+label{
+    padding-left: 10px;
+}
+
+h6{
+    margin-bottom: 0px;
+}
+#sort{
+    outline: none;
+    border: none;
+}
+.btn{
+    border: 1px solid orange;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.btn:hover{
+    color: #fff;
+    background-color: orange;
+}
+.card-body{
+    padding: 8px;
+}
+.sign{
+    width: 25px;
+    height: 25px;
+}
+.discount{
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 65px;
+    position: absolute;
+    top: 2%;
+}
+@media(min-width:1200px){
+    #search{
+        width: 300px;
+        padding: 5px;
+        padding-left: 20px;
+    }
+    .search-nav-item{
+        margin-left: 400px;
+        width: 350px;
+    }
+    .fa-user-o{
+        margin-left: 300px;
+    }
+    .text{
+        display: none;
+    }
+    .fa-user-o,.fa-shopping-cart{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    #sidebar{
+        width: 23%;
+        padding-top: 20px;
+        padding-right: 20px;
+        float: left;
+    }
+    #products{
+        width: 70%;
+        padding: 10px;
+        margin: 0;
+        float: right;
+    }
+    .card{
+        width: 300px;
+        height: 330px;
+        border: none;
+    }
+    .card-img-top{
+        width: 295px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    del{
+        padding-right: 2px;
+    }
+    .filter,#mobile-filter{
+        display: none;
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    #search{
+        width: 300px;
+        padding: 5px;
+        padding-left: 20px;
+    }
+    .search-nav-item{
+        margin-left: 200px;
+        width: 350px;
+    }
+    .fa-user-o{
+        margin-left: 160px;
+    }
+    .text{
+        display: none;
+    }
+    #sidebar{
+        width: 23%;
+        padding-top: 20px;
+        padding-right: 20px;
+        float: left;
+    }
+    #products{
+        width: 70%;
+        padding: 10px;
+        margin: 0;
+        float: right;
+    }
+    .card{
+        width: 200px;
+        height: 330px;
+        border: none;
+    }
+    .card-img-top{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .fa-plus,.fa-minus{
+        font-size: 12px;
+    }
+    .sign{
+        height: 25px;
+    }
+    .price{
+        width: 99px;
+    }
+    .filter,#mobile-filter{
+        display: none;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    #search{
+        width: 300px;
+        padding: 5px;
+        padding-left: 20px;
+    }
+    .search-nav-item{
+        margin-left: 60px;
+        width: 350px;
+    }
+    .fa-user-o{
+        margin-left: 80px;
+    }
+    .text{
+        display: none;
+    }
+    #sidebar{
+        width: 33%;
+        padding-top: 20px;
+        padding-right: 20px;
+        float: left;
+    }
+    #products{
+        width: 65%;
+        padding: 10px;
+        margin: 0;
+        float: right;
+    }
+    .card{
+        border: none;
+    }
+    .filter,#mobile-filter{
+        display: none;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .text{
+        display: none;
+    }
+    .search-nav-item{
+        margin-left: 35px;
+        width: 270px;
+    }
+    #search{
+        width: 240px;
+        padding: 5px;
+        padding-left: 20px;
+    }
+    .fa-search{
+        padding: 3px;
+        font-size: 18px;
+    }
+    #sidebar{
+        width: 40%;
+        padding-top: 20px;
+        padding-right: 20px;
+        float: left;
+    }
+    #products{
+        width: 60%;
+        padding: 10px;
+        margin: 0;
+        float: right;
+    }
+    .card{
+        border: none;
+    }
+    #off{
+        padding-left: 2px;
+    }
+    #sorting span,#res{
+        font-size: 14px;
+    }
+    .filter,#mobile-filter{
+        display: none;
+    }
+}
+@media(max-width:575px){
+    .search-nav-item{
+        margin: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+    #search{
+        width: 80%;
+        padding-left: 10px;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+    .fa-search{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .filter{
+        margin-left: 70%;
+        margin-top: 2%;
+    }
+    #sorting,#res{
+        font-size: 12px;
+        margin-top: 2%;
+    }
+}
+
+
+/* ... Your existing styles ... */
+
+/* styles.module.css */
+.add_task_button {
+    position: fixed;
+    bottom: 80px; /* Adjust this value based on your footer height */
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add_task_button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Zoom in slightly on hover */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ... Rest of your styles ... */

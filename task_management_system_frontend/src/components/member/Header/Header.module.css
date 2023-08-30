@@ -1,0 +1,45 @@
+
+
+@media (min-width:765px){
+    .nav {
+        border-radius: 25px;
+        align-items: center;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s;
+        /* Adding transition effect for smooth color change */
+        /* display: inline-block; */
+        /* Use inline-block for dynamic width */
+        color: white !important;
+    }
+    
+    
+    .nav:hover {
+        color: #ffcc00 !important;
+        /* Change text color on hover */
+        background-color: white;
+        border-radius: 25px;
+        border-bottom-width: 0.125rem;
+        border-bottom-style: solid;
+        border-bottom-color: #ffcc00;
+        padding-bottom: 2px;
+    }
+    
+}
+
+
+
+.btnDanger {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btnDanger:hover {
+  transform: rotate(360deg);
+}

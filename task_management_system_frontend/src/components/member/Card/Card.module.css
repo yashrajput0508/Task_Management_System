@@ -1,0 +1,345 @@
+.section_our_solution .row {
+    align-items: center;
+  }
+  
+  .our_solution_category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .our_solution_category .solution_cards_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .solution_cards_box .solution_card {
+    flex: 1 50%;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+      0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    border-radius: 15px;
+    margin: 8px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 210px;
+    transition: 0.7s;
+  }
+  
+  .solution_cards_box .solution_card:hover {
+    background: #309df0;
+    color: #fff;
+    transform: scale(1.1);
+    z-index: 9;
+  }
+  
+  .solution_cards_box .solution_card:hover::before {
+    background: rgb(85 108 214 / 10%);
+  }
+  
+  .solution_cards_box .solution_card:hover .solu_title h3,
+  .solution_cards_box .solution_card:hover .solu_description p {
+    color: #fff;
+  }
+  
+  .solution_cards_box .solution_card:before {
+    content: "";
+    position: absolute;
+    background: rgb(85 108 214 / 5%);
+    width: 170px;
+    height: 400px;
+    z-index: -1;
+    transform: rotate(42deg);
+    right: -56px;
+    top: -23px;
+    border-radius: 35px;
+  }
+  
+  .solution_cards_box .solution_card:hover .solu_description button {
+    background: #fff !important;
+    color: #309df0;
+  }
+  
+  .solution_card .solu_title h3 {
+    color: #212121;
+    font-size: 1.3rem;
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  
+  .solution_card .solu_description p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .solution_card .solu_description button {
+    border: 0;
+    border-radius: 15px;
+    background: linear-gradient(
+      140deg,
+      #42c3ca 0%,
+      #42c3ca 50%,
+      #42c3cac7 75%
+    ) !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 16px;
+  }
+  
+  .our_solution_content h1 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  .hover_color_bubble {
+    position: absolute;
+    background: rgb(54 81 207 / 15%);
+    width: 100rem;
+    height: 100rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 16rem;
+    border-radius: 50%;
+    transform: rotate(-36deg);
+    left: -18rem;
+    transition: 0.7s;
+  }
+  
+  .solution_cards_box .solution_card:hover .hover_color_bubble {
+    top: 0rem;
+  }
+  
+  .solution_cards_box .solution_card .so_top_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .solution_cards_box .solution_card .so_top_icon img {
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  /*start media query*/
+  @media screen and (min-width: 320px) {
+    .sol_card_top_3 {
+      position: relative;
+      top: 0;
+    }
+  
+    .our_solution_category {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .our_solution_category .solution_cards_box {
+      flex: auto;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .our_solution_category .solution_cards_box {
+      flex: 1;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .sol_card_top_3 {
+      position: relative;
+      top: -3rem;
+    }
+    .our_solution_category {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  /* card-animation.css */
+
+
+
+/* card-animation.css */
+
+/* card-animation.css */
+
+.cards {
+  opacity: 1;
+  animation: fadeAnimation 2s ease-in-out;
+}
+
+
+@keyframes fadeAnimation {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+/* Add this CSS to your stylesheet */
+.success_icon {
+  font-size: 24px;
+  color: #00c853;
+  opacity: 0;
+  transform: scale(0.8) rotate(0deg);
+  transform-origin: center center;
+  transition: transform 0.3s, opacity 0.3s;
+  animation: fadeInAndRotate 0.5s ease-in-out 1s forwards, bounce 1.5s infinite;
+}
+
+@keyframes fadeInAndRotate {
+  0% {
+      opacity: 0;
+      transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+      opacity: 0.8;
+      transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-8px);
+  }
+}
+
+/* Add this CSS to your stylesheet */
+.icon_in_progress {
+  font-size: 20px;
+  color: #ffc107; /* Yellow color for in-progress */
+  opacity: 0;
+  transform: scale(0.8) rotate(0deg);
+  transform-origin: center center;
+  transition: transform 0.3s, opacity 0.3s;
+  animation: fadeInAndRotate 0.5s ease-in-out 1s forwards, rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Rest of the CSS remains the same */
+
+/* Priority section */
+.priority_section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Priority badge */
+.priority_badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: pulse 1.5s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+}
+
+/* High Priority badge */
+.priority_badge.high_priority {
+  background-color: #ff6347; /* Red */
+  color: #fff;
+}
+.priority_badge.high_priority:hover {
+  background-color: #d9534f;
+  transform: scale(1.1);
+  animation: none;
+}
+
+/* Medium Priority badge */
+.priority_badge.medium_priority {
+  background-color: #ffc107; /* Yellow */
+  color: #000;
+}
+.priority_badge.medium_priority:hover {
+  background-color: #e0a800;
+  transform: scale(1.1);
+  animation: none;
+}
+
+/* Low Priority badge */
+.priority_badge.low_priority {
+  background-color: #6c757d; /* Gray */
+  color: #fff;
+}
+.priority_badge.low_priority:hover {
+  background-color: #5a6268;
+  transform: scale(1.1);
+  animation: none;
+}
+
+/* Priority icon */
+.priority-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* Priority status */
+.priority-status {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #888;
+  margin-right: 10px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Priority status animation */
+.priority-status.animate {
+  animation: fadeInUp 0.6s ease-out forwards, pulse 1.5s ease-in-out infinite;
+}
+
+/* Keyframes animations */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}

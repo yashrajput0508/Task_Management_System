@@ -1,0 +1,292 @@
+
+
+.dashboard_heading {
+    font-size: 30px;
+    opacity: 0;
+    transform: scale(0.8) rotate(-20deg);
+    animation: headingAnimation 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes headingAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotate(-20deg);
+        color: #08b4f8;
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1) rotate(20deg);
+        color: #007bff;
+    }
+    80% {
+        transform: scale(0.95) rotate(-10deg);
+        color: #f8c008;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.9) rotate(0);
+        color: rgb(35, 208, 220);
+    }
+}
+
+
+/* Card */
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);
+}
+.l-bg-cherry {
+    background: linear-gradient(to right, #493240, #f09) !important;
+    color: #fff;
+}
+
+.l-bg-blue-dark {
+    background: linear-gradient(to right, #373b44, #4286f4) !important;
+    color: #fff;
+}
+
+.l-bg-green-dark {
+    background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+    color: #fff;
+}
+
+.l-bg-orange-dark {
+    background: linear-gradient(to right, #a86008, #ffba56) !important;
+    color: #fff;
+}
+
+.card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
+    font-size: 110px;
+}
+
+.card .card-statistic-3 .card-icon {
+    text-align: center;
+    line-height: 50px;
+    margin-left: 15px;
+    color: #000;
+    position: absolute;
+    right: -5px;
+    top: 20px;
+    opacity: 0.1;
+}
+
+.l-bg-cyan {
+    background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+    color: #fff;
+}
+
+.l-bg-green {
+    background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
+    color: #fff;
+}
+
+.l-bg-orange {
+    background: linear-gradient(to right, #f9900e, #ffba56) !important;
+    color: #fff;
+}
+
+.l-bg-cyan {
+    background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+    color: #fff;
+}
+
+
+
+.bio-row {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding:0 15px;
+}
+
+.bio-row p span {
+    width: 120px;
+    display: inline-block;
+}
+
+
+
+.total-like-user-main a {
+    display: inline-block;
+    margin: 0 -17px 0 0;
+}
+.total-like {
+    border: 1px solid;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    height: 34px;
+    line-height: 33px;
+    padding: 0 13px;
+    vertical-align: top;
+}
+.restaurant-detailed-ratings-and-reviews hr {
+    margin: 0 -24px;
+}
+.graph-star-rating-header .star-rating {
+    font-size: 17px;
+}
+.progress {
+    background: #f2f4f8 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 30px;
+}
+.rating-list {
+    display: inline-flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.rating-list-left {
+    height: 16px;
+    line-height: 29px;
+    width: 10%;
+}
+.rating-list-center {
+    width: 80%;
+}
+.rating-list-right {
+    line-height: 29px;
+    text-align: right;
+    width: 10%;
+}
+.restaurant-slider-pics {
+    bottom: 0;
+    font-size: 12px;
+    left: 0;
+    z-index: 999;
+    padding: 0 10px;
+}
+.restaurant-slider-view-all {
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+}
+.offer-dedicated-nav .nav-link.active,
+.offer-dedicated-nav .nav-link:hover,
+.offer-dedicated-nav .nav-link:focus {
+    border-color: #3868fb;
+    color: #3868fb;
+}
+.offer-dedicated-nav .nav-link {
+    border-bottom: 2px solid #fff;
+    color: #000000;
+    padding: 16px 0;
+    font-weight: 600;
+}
+.offer-dedicated-nav .nav-item {
+    margin: 0 37px 0 0;
+}
+.restaurant-detailed-action-btn {
+    margin-top: 12px;
+}
+.restaurant-detailed-header-right .btn-success {
+    border-radius: 3px;
+    height: 45px;
+    margin: -18px 0 18px;
+    min-width: 130px;
+    padding: 7px;
+}
+.text-black {
+    color: #000000;
+}
+.icon-overlap {
+    bottom: -23px;
+    font-size: 74px;
+    opacity: 0.23;
+    position: absolute;
+    right: -32px;
+}
+.menu-list img {
+    width: 41px;
+    height: 41px;
+    object-fit: cover;
+}
+.restaurant-detailed-header-left img {
+    width: 88px;
+    height: 88px;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+}
+.reviews-members .media .mr-3 {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+}
+.rounded-pill {
+    border-radius: 50rem!important;
+}
+.total-like-user {
+    border: 2px solid #fff;
+    height: 34px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    width: 34px;
+}
+.total-like-user-main a {
+    display: inline-block;
+    margin: 0 -17px 0 0;
+}
+.total-like {
+    border: 1px solid;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    height: 34px;
+    line-height: 33px;
+    padding: 0 13px;
+    vertical-align: top;
+}
+.restaurant-detailed-ratings-and-reviews hr {
+    margin: 0 -24px;
+}
+.graph-star-rating-header .star-rating {
+    font-size: 17px;
+}
+.progress {
+    background: #f2f4f8 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 30px;
+}
+.rating-list {
+    display: inline-flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.rating-list-left {
+    height: 16px;
+    line-height: 29px;
+    width: 10%;
+}
+.rating-list-center {
+    width: 80%;
+}
+.rating-list-right {
+    line-height: 29px;
+    text-align: right;
+    width: 10%;
+}
+.restaurant-slider-pics {
+    bottom: 0;
+    font-size: 12px;
+    left: 0;
+    z-index: 999;
+    padding: 0 10px;
+}
+.restaurant-slider-view-all {
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+}
+
+.progress {
+    background: #f2f4f8 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 30px;
+}
