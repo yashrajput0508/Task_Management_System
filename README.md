@@ -95,8 +95,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Connect with Me
 
-Have questions or feedback? Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/your-username/).
+Have questions or feedback? Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/yash-rajput-515408214/).
 
 ## LinkedIn Post
 
-I've also shared a video about this project on LinkedIn. Check it out: [LinkedIn Post with Video](https://www.linkedin.com/posts/your-username/your-post-link)
+I've also shared a video about this project on LinkedIn. Check it out: [LinkedIn Post with Video](https://www.linkedin.com/posts/yash-rajput-515408214_taskmanagementsystem-productivityboost-collaborationtool-activity-7102729724073791488-Rbyl?utm_source=share&utm_medium=member_desktop)
