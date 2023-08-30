@@ -43,7 +43,7 @@ The Task Management System is a meticulously crafted application tailored to str
   <img src="Screenshots/Login_Page.png" alt="Login Page" width="400">
   <img src="Screenshots/Admin_Page_Dashboard1.png" alt="Admin Dashboard Portal" width="400">
   <img src="Screenshots/Admin_Page_Dashboard2.png" alt="Admin Dashboard Portal" width="400">
-  <img src="Screenshots/Admin_Member_Page.png" alt="Admin Member List Portal" width="400">
+  <img src="Screenshots/Admin_Member_Page1.png" alt="Admin Member List Portal" width="400">
   <img src="Screenshots/Member_Page_Dashboard1.png" alt="Member Dashboard" width="400">
   <img src="Screenshots/Member_Page_Dashboard2.png" alt="Member Dashboard" width="400">
   <img src="Screenshots/Member_Task_Page.png" alt="Member Task View Page" width="400">
