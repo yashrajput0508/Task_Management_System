@@ -1,7 +1,5 @@
 # Task Management System
 
-![Project Logo](project-logo.png)
-
 A comprehensive task management system for efficient collaboration and productivity enhancement.
 
 ## Table of Contents
@@ -40,9 +38,16 @@ The Task Management System is a meticulously crafted application tailored to str
 
 ## Screenshots
 
-![Admin Portal](screenshots/admin-portal.png)
-![Member Portal](screenshots/member-portal.png)
-![Dashboard](screenshots/dashboard.png)
+<p align="center">
+  
+  <img src="Screenshots/Login_Page.png" alt="Login Page" width="400">
+  <img src="Screenshots/Admin_Page_Dashboard1.png" alt="Admin Dashboard Portal" width="400">
+  <img src="Screenshots/Admin_Page_Dashboard2.png" alt="Admin Dashboard Portal" width="400">
+  <img src="Screenshots/Admin_Member_Page.png" alt="Admin Member List Portal" width="400">
+  <img src="Screenshots/Member_Page_Dashboard1.png" alt="Member Dashboard" width="400">
+  <img src="Screenshots/Member_Page_Dashboard2.png" alt="Member Dashboard" width="400">
+  <img src="Screenshots/Member_Task_Page.png" alt="Member Task View Page" width="400">
+</p>
 
 ## Getting Started
 
@@ -90,8 +95,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Connect with Me
 
-Have questions or feedback? Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/your-username/).
+Have questions or feedback? Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/yash-rajput-515408214/).
 
 ## LinkedIn Post
 
-I've also shared a video about this project on LinkedIn. Check it out: [LinkedIn Post with Video](https://www.linkedin.com/posts/your-username/your-post-link)
+I've also shared a video about this project on LinkedIn. Check it out: [LinkedIn Post with Video](https://www.linkedin.com/posts/yash-rajput-515408214_taskmanagementsystem-productivityboost-collaborationtool-activity-7102729724073791488-Rbyl?utm_source=share&utm_medium=member_desktop)
